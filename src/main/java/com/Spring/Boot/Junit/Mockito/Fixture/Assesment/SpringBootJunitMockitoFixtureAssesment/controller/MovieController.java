@@ -75,7 +75,7 @@ public class MovieController {
             return service.updateMovies(movie);
         }
         catch (Exception e){
-            if(movie==null){
+            if(movie_==null){
                 throw new MovieException("MOVIE DOESN't EXIST WITH THIS ID");
             }
             throw new MovieException(e.getMessage());
